@@ -1,17 +1,17 @@
 # claude-memories
 
+> 🤖 *This entire repo — the memories, the docs you're reading, and the tooling — was written by Claude Code, under my direction.*
+
 A small, curated set of notes on **how I want coding agents to work** — the habits and hard-won lessons I'd want any AI agent to share, whatever machine or project I'm on. Each one is a short, standalone file written to be understood **cold**: by an agent in a fresh session, or by an engineer who's never seen them.
 
 Nothing proprietary, nothing tied to a single project. (One file holds personal context about me; everything else is generic and shareable.)
 
+**This README is for humans** — a guided tour. What *Claude* actually loads is **[MEMORY.md](MEMORY.md)**, the machine-facing index (every memory, one line each).
+
 **New here?** Skim the **⭐ Start here** list just below, then browse the rest by theme.
 
-- **[MEMORY.md](MEMORY.md)** — the index: every memory, one line each.
-- **[AUTHORING.md](AUTHORING.md)** — how these are written, and why they read cold.
-- **[EXTRACTION-PROMPT.md](EXTRACTION-PROMPT.md)** — how an agent on another machine adds its own.
-
 <details>
-<summary>📥 Get these — clone them all, or grab one by slug</summary>
+<summary><strong>📥 Get these</strong> — clone them all, or grab one by slug &nbsp;·&nbsp; <em>(click to expand)</em></summary>
 
 Clone the whole set:
 
@@ -108,3 +108,7 @@ The handful that matter most to me — the non-negotiables. New here? Read these
 |---|---|
 | [append-only-during-review](memories/append-only-during-review.md) | On squash-merge branches, add commits instead of rebasing — preserve the reviewer's delta and CI chronology. |
 | [attribute-ai-authorship-publicly](memories/attribute-ai-authorship-publicly.md) | Mark AI-authored content published under the user's name, at every unit a reader sees. |
+
+---
+
+<sub>Inside baseball, for maintainers: **[AUTHORING.md](AUTHORING.md)** — conventions for writing these (and why they read cold) · **[EXTRACTION-PROMPT.md](EXTRACTION-PROMPT.md)** — how an agent on another machine contributes its own.</sub>
