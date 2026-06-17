@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Memories drift gate. Activate once with:  git config core.hooksPath .githooks
+# Bypass a single commit with:  git commit --no-verify
+exec ./check.sh
