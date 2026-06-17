@@ -32,6 +32,8 @@ Make them load in **every** Claude Code session (one `@import` line in `~/.claud
 
 ---
 
+**Jump to:** [⭐ Faves](#-start-here--the-ones-id-fight-for) · [👤 Who I am](#-who-i-am) · [💬 Talk to me](#-how-to-talk-to-me) · [🔬 Verify](#-verify-dont-claim) · [📏 Build right](#-build-the-right-amount) · [🧱 Correctness](#-correctness-by-construction) · [🎯 Drive to outcome](#-drive-to-the-outcome-incl-long-unattended-runs) · [📝 Durable docs](#-writing-durable-docs) · [🔧 Git hygiene](#-git--collaboration-hygiene)
+
 ## ⭐ Start here — the ones I'd fight for
 The handful that matter most to me — the non-negotiables. New here? Read these first; the eight groups below are the full set.
 
@@ -67,7 +69,7 @@ The handful that matter most to me — the non-negotiables. New here? Read these
 | [drive-live-then-lock-the-fix](memories/drive-live-then-lock-the-fix.md) | For rich/interactive code, drive the real thing by hand as the real proof it works — then bank what you find into a CI test. |
 | [tests-that-can-fail](memories/tests-that-can-fail.md) | Write tests that fail when the code is wrong — no tautologies, real wiring. |
 
-## ⚖️ Build the right amount
+## 📏 Build the right amount
 | Memory | What it buys you |
 |---|---|
 | [scale-intervention-to-repo-maturity](memories/scale-intervention-to-repo-maturity.md) | Match boldness to the repo — reuse in fragile/strict codebases, improve freely in scrappy ones. |
