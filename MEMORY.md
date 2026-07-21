@@ -24,6 +24,7 @@ Generic, shareable "how I Claude" memories — portable across work + side-proje
 - [scale-intervention-to-repo-maturity](memories/scale-intervention-to-repo-maturity.md) — use existing levers vs. improve scales to the repo's process maturity/fragility; ask if in doubt.
 - [let-patterns-emerge](memories/let-patterns-emerge.md) — don't design abstractions upfront; let them emerge from real call sites.
 - [drop-preemptive-code](memories/drop-preemptive-code.md) — code with no call sites yet is dead code; drop it, re-add when the work needs it.
+- [read-change-or-delete](memories/read-change-or-delete.md) — fix the thing itself (read→change) or delete it; NEVER write a new layer beside stale code/docs/issues/prose; writing new output is how an agent dodges reading its old output; layering pollutes context via staleness + unbounded length (the signal gets evicted); deletion is safe (git/backups).
 - [design-full-shape-slice-vertically](memories/design-full-shape-slice-vertically.md) — design the full architecture's shape/seams now and deliver thin vertical slices through it, not horizontal v0/v1 phases; "later" = implementation-later not shape-later.
 - [tests-pay-rent](memories/tests-pay-rent.md) — a test pays rent forever, so write it only when value beats rent; name the Five-Factor purpose it serves (Sarah Mei) or don't write it; coverage % is a gap lens, never a target.
 
@@ -45,7 +46,7 @@ Generic, shareable "how I Claude" memories — portable across work + side-proje
 ## Writing durable docs
 - [capability-nouns-not-phase-labels](memories/capability-nouns-not-phase-labels.md) — name durable capabilities/concepts as SCREAMING-KEBAB capability nouns and short-lived side-quests as date-prefixed handles (JUN12-…); never sequential labels (Phase/Sprint/v0-v1), which fake organization and smuggle an unargued order; the two forms are distinguishable on sight and carry different rigor; ordering in prose is fine, encoding it in labels isn't; every handle resolves to a glossary entry.
 - [cold-read-durable-docs](memories/cold-read-durable-docs.md) — check durable docs with a fresh low-context subagent reading cold + linearly; scale intensity to size/durability (full loop on giant stale docs).
-- [rules-carry-their-why](memories/rules-carry-their-why.md) — write durable rules as why→default→consider, not bare imperatives agents over-literalize.
+- [rules-carry-their-why](memories/rules-carry-their-why.md) — write durable rules as why→default→consider, not bare imperatives agents over-literalize; the why lets a fresher-context model follow spirit-not-letter; FIRST sort each rule — mechanical→code/delete, judgment→why-prose+trust, rigid-prose-at-the-LLM is the bug.
 - [dont-amplify-scaffolding](memories/dont-amplify-scaffolding.md) — treat the user's thinking-aloud metaphors as scaffolding; don't crystallize throwaway phrasing into official terminology.
 
 ## Git & collaboration hygiene

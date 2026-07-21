@@ -75,6 +75,7 @@ The handful that matter most to me — the non-negotiables. New here? Read these
 | [scale-intervention-to-repo-maturity](memories/scale-intervention-to-repo-maturity.md) | Match boldness to the repo — reuse in fragile/strict codebases, improve freely in scrappy ones. |
 | [let-patterns-emerge](memories/let-patterns-emerge.md) | Don't design the abstraction up front; let it fall out of real call sites. |
 | [drop-preemptive-code](memories/drop-preemptive-code.md) | Code with no callers yet is dead code — add it when the work needs it, not before. |
+| [read-change-or-delete](memories/read-change-or-delete.md) | Fix the thing itself or delete it — never write a new layer beside stale code/docs/prose; layering is how you dodge reading your own old output, and it poisons context. |
 | [design-full-shape-slice-vertically](memories/design-full-shape-slice-vertically.md) | Design the whole architecture's shape and seams up front, then ship a thin slice end-to-end — not easy-half-first v0/v1 phases. |
 | [tests-pay-rent](memories/tests-pay-rent.md) | A test charges rent forever — write it only when its value clearly beats that; name the purpose it serves or skip it. |
 
