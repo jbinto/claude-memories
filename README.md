@@ -105,6 +105,7 @@ The handful that matter most to me — the non-negotiables. New here? Read these
 | [cold-read-durable-docs](memories/cold-read-durable-docs.md) | Have a fresh, no-context reader try the doc cold and report exactly where they get lost. |
 | [rules-carry-their-why](memories/rules-carry-their-why.md) | Write rules as why → default → consider, not bare imperatives agents over-literalize. |
 | [dont-amplify-scaffolding](memories/dont-amplify-scaffolding.md) | Don't promote the user's thinking-aloud metaphors into official terminology. |
+| [docs-have-a-budget](memories/docs-have-a-budget.md) | Docs are read almost only by agents, so every token taxes the loader — write lean; the corpus grows with the software/process, not with time; sweep-and-delete before you add. |
 
 ## 🔧 Git & collaboration hygiene
 | Memory | What it buys you |

@@ -48,6 +48,7 @@ Generic, shareable "how I Claude" memories — portable across work + side-proje
 - [cold-read-durable-docs](memories/cold-read-durable-docs.md) — check durable docs with a fresh low-context subagent reading cold + linearly; scale intensity to size/durability (full loop on giant stale docs).
 - [rules-carry-their-why](memories/rules-carry-their-why.md) — write durable rules as why→default→consider, not bare imperatives agents over-literalize; the why lets a fresher-context model follow spirit-not-letter; FIRST sort each rule — mechanical→code/delete, judgment→why-prose+trust, rigid-prose-at-the-LLM is the bug.
 - [dont-amplify-scaffolding](memories/dont-amplify-scaffolding.md) — treat the user's thinking-aloud metaphors as scaffolding; don't crystallize throwaway phrasing into official terminology.
+- [docs-have-a-budget](memories/docs-have-a-budget.md) — the durable-doc corpus is loaded/read almost only by AGENTS, so every token taxes the loader → write LEAN not verbose; the corpus grows ∝ software+process, NOT ∝ time/hours; sweep+delete first, then add in the freed room; trade complexity, don't accumulate.
 
 ## Git & collaboration hygiene
 - [append-only-during-review](memories/append-only-during-review.md) — on squash-merge branches, add commits instead of rebasing/amending; preserves the reviewer's re-review delta and chronological CI signal.
