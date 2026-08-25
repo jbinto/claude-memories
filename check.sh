@@ -37,7 +37,17 @@ for f in memories/*.md; do
   grep -Fq "($f)" MEMORY.md || note "$f: not linked from MEMORY.md"
 done
 
-echo "4. yaml frontmatter parses (GitHub rejects invalid YAML — e.g. an unquoted"
+echo "4. skills frontmatter (name == dir; description present)"
+for f in skills/*/SKILL.md; do
+  [ -f "$f" ] || continue
+  d=$(basename "$(dirname "$f")")
+  grep -q '^name:' "$f" || note "$f: missing 'name:'"
+  grep -q '^description:' "$f" || note "$f: missing 'description:'"
+  n=$(grep -m1 '^name:' "$f" | sed 's/^name:[[:space:]]*//')
+  [ "$n" = "$d" ] || note "$f: name '$n' != dir '$d'"
+done
+
+echo "5. yaml frontmatter parses (GitHub rejects invalid YAML — e.g. an unquoted"
 echo "   description with an interior ': ')"
 if command -v ruby >/dev/null 2>&1; then
   yaml_errs=$(ruby -ryaml -e '

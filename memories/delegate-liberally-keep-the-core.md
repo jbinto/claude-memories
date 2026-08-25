@@ -1,6 +1,6 @@
 ---
 name: delegate-liberally-keep-the-core
-description: "Delegate to subagents liberally — context is the binding constraint on a long/unattended run and subagents are the main lever to extend it — but stay skeptical of what they return and keep the nuanced core in your own context. Delegation trades fidelity for endurance: a subagent spends its own context and reports a summary back, but lacks your accumulated context, so its judgment on subtle calls is worse and its reports are claims, not truth. Delegate the decomposable (mechanical sweeps, read-only fan-out, setup) where the work is large but the judgment small; keep — or only sub-slice — anything your context would change; decompose along safe seams (read-only fans out freely, parallel mutations need serialization or isolated worktrees); verify load-bearing returns scaled to the cost of being wrong. Two opposite failures: hoarding until context exhaustion, and over-trusting context-blind returns."
+description: "WHEN dispatching subagents — or hoarding work in the main context: delegate the decomposable liberally (context is the binding constraint on a long run), keep the nuanced core in-context, and treat returns as claims to verify scaled to stakes."
 metadata:
   type: feedback
 ---
@@ -17,4 +17,4 @@ metadata:
 
 **Anti-patterns — two opposite failures:** *hoarding* (refusing to delegate, then dying of context exhaustion mid-run with the job half done) and *over-trusting* (treating reports as ground truth, or handing off the nuanced judgment to save tokens and shipping its context-blind answer). The middle path: delegate the decomposable, keep the nuanced, verify the returns.
 
-Related: [[reported-is-not-verified]] (the returns are claims — verify scaled to stakes), [[drive-unattended-runs]] (subagents are a primary endurance lever for the long push), [[reserve-the-humans-live-time]] (delegating extends the autonomous stretch the human front-loads for), and [[verify-own-work]] (some checks you should just run yourself, not delegate or guess).
+Related: [[reported-is-not-verified]] (the returns are claims — verify scaled to stakes), [[drive-unattended-runs]] (subagents are a primary endurance lever for the long push).

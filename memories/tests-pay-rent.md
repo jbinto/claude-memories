@@ -1,6 +1,6 @@
 ---
 name: tests-pay-rent
-description: A test has no inherent value — it pays rent forever (read, run, maintain, plus the risk of false confidence), so write it only when the value clearly beats the rent. Before writing one, name the concrete factor it serves (does-it-work-now, prevent-regression, document-behavior, design-pressure, support-refactoring); if you can't, or it serves only one and would break on every refactor, it's net-negative — don't write it. Coverage % is a gap-finding lens, never a target.
+description: "BEFORE writing any test — name the concrete factor it serves (Sarah Mei's five: works-now, prevent-regression, document, design-pressure, support-refactoring); a test pays rent forever, so its value must beat that; coverage % is a gap lens, never a target."
 metadata:
   type: feedback
 ---
@@ -28,4 +28,4 @@ metadata:
 
 **Anti-patterns it reacts against:** coverage targets treated as goals; the test pyramid (the heuristic of many unit tests, fewer integration, fewest e2e) applied as dogma without asking what the code needs; mock-heavy unit tests that mirror the implementation 1:1 and have to be edited every single time the code is.
 
-Related: [[tests-that-can-fail]] (once a test is worth writing, make it able to actually fail when prod is wrong — anti-tautology, real production wiring); [[verify-own-work]] ("done" means you observed the behavior, not that a coverage number moved); and [[drop-preemptive-code]] (the same don't-build-what-you-don't-yet-need judgment applied to production code — a test you can't justify is the testing analog of inert preemptive code).
+Related: [[tests-that-can-fail]] (once a test is worth writing, make it able to actually fail when prod is wrong) and [[drop-preemptive-code]] (the same YAGNI judgment applied to production code).

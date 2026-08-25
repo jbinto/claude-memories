@@ -51,8 +51,12 @@ Procedures live in `skills/` (ack-mode, cold-read-pass, html-answer-doc). Claude
 discovers skills in `~/.claude/skills/`, so symlink each one from your clone:
 
 ```sh
+mkdir -p ~/.claude/skills
 for d in ~/dev/claude-memories/skills/*/; do ln -sfn "$d" ~/.claude/skills/"$(basename "$d")"; done
 ```
+
+(If a real directory already occupies `~/.claude/skills/<name>`, `ln` fails with
+"File exists" — remove or rename it first.)
 
 Re-run after new skills land (a `git pull` updates the linked content automatically).
 

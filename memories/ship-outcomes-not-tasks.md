@@ -1,6 +1,6 @@
 ---
 name: ship-outcomes-not-tasks
-description: Default to outcome-driven work, not task-list-driven. If Y needs X and both are approved, ship X and Y together (same session/commit/PR) — don't throw X over the wall and stop. Stopping points are "outcome shipped" or "genuinely blocked on input," not "finished sub-step 3."
+description: "WHEN working from a task list or about to stop at a finished sub-step — chase the outcome, not the checklist; if Y needs X and both are approved, ship them together; stop only at outcome-shipped or genuinely-blocked."
 metadata:
   type: feedback
 ---

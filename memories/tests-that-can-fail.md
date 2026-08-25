@@ -1,6 +1,6 @@
 ---
 name: tests-that-can-fail
-description: Write tests that can actually fail when production code is wrong — don't over-mock, no tautologies, exercise real production wiring, include anti-tautology proofs, test the way the software is actually used, and document what you can't observe. The principles are means to true confidence, not dogma.
+description: "WHEN writing or reviewing tests — each must be able to FAIL when production code is wrong: no tautologies, no over-mocking, real production wiring, test the way the software is actually used."
 metadata:
   type: feedback
 ---

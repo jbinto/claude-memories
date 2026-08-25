@@ -8,7 +8,7 @@ These memories are durable docs read **cold** — by an AI coding agent in a fre
 4. **Attribute or gloss every tool/flag/acronym on first use** — `Claude Code's --chrome`, `Danger.js`, "a re-notify mechanism", "dependency-injection (DI)".
 5. **Define coined terms before leaning on them** (e.g. "parachute", "lever"), and **watch list parallelism** — a rejected option must not read as another endorsed one.
 6. **Trigger-phrase the `description`.** The index line is a firing condition, not a summary — "WHEN doing X / BEFORE Y, read this," so it pattern-matches at the moment of action. A summary-phrased line never fires.
-7. **Write lean (5-era).** Assume a 5-generation model: give the why and the default, cut enumerations a brief instruction covers, cap `Related:` links at one or two, no restated boundaries. Rationale + method: `references/5-era-context-engineering.md` and `references/5-era-overhaul-playbook.md`.
+7. **Write lean (5-era — the 2026 Fable/Opus/Sonnet-5 model generation).** Assume a 5-generation model: give the why and the default, cut enumerations a brief instruction covers, cap `Related:` links at one or two, no restated boundaries. Rationale + method: `references/5-era-context-engineering.md` and `references/5-era-overhaul-playbook.md`.
 
 **Practice:** self-apply the cold-read lens to every new memory as you write it. Reserve a fresh-subagent cold-read pass (see `memories/cold-read-durable-docs.md`) for batches or when something feels context-bound.
 

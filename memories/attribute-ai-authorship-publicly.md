@@ -9,6 +9,6 @@ metadata:
 
 **Why:** readers assume the human authored what appears under their name; letting an AI silently "speak as" them is misattribution. A single disclaimer elsewhere fails — readers scroll past it or quote units out of context. This is an ethical line, not a style choice.
 
-**Defaults:** lead the unit with an explicit marker (e.g. `> 🤖 **Claude Code speaking**` on GitHub prose, an "AI-drafted" prefix/footer elsewhere). A git `Co-Authored-By` trailer does NOT substitute for the visible marker — trailers aren't read where the prose is.
+**Defaults:** lead the unit with an explicit marker (e.g. `> 🤖 **Claude Code speaking**` on GitHub prose, an "AI-drafted" prefix/footer elsewhere). In prose surfaces a `Co-Authored-By` trailer does NOT substitute for the visible marker — trailers aren't read where the prose is. In commit messages, the trailer IS the attribution convention and suffices.
 
 **Consider:** out of scope — private artifacts nobody attributes to the human (scratch files, private notes, in-repo code comments). Commit messages are in scope (others read them). When in doubt, attribute.
