@@ -1,57 +1,69 @@
 # Memory index
 
-Generic, shareable "how I Claude" memories — portable across work + side-project, no proprietary info. Jesse-specific personal context is confined to `memories/jesse-profile-and-working-style.md`; everything else stays generic. (Repo-specific memories stay in their own project memory dirs.) Grouped by category; see `README.md` for the "what it buys you" version.
+Generic, shareable "how I Claude" memories — portable across work + side-project, no proprietary info. Jesse-specific personal context is confined to `memories/jesse-profile-and-working-style.md`; everything else stays generic. (Repo-specific memories stay in their own project memory dirs.) Each line is a FIRING CONDITION — when it matches the moment, read the full memory at `memories/<slug>.md`. Grouped by category; `README.md` has the human tour.
 
 ## Who I am
-- [jesse-profile-and-working-style](memories/jesse-profile-and-working-style.md) — operational profile for working with Jesse (the one user-specific file).
+- [jesse-profile-and-working-style](memories/jesse-profile-and-working-style.md) — READ EARLY in any session working with Jesse: competencies, execution preferences, calibration shifts.
 
 ## How to talk to me
-- [make-walls-of-text-scannable](memories/make-walls-of-text-scannable.md) — tasteful structure (hierarchy, tables, sparing emoji) to make large outputs skimmable; across comms surfaces.
-- [ack-mode](memories/ack-mode.md) — when the user declares "ack mode" (reacting piecemeal to long output): reply only `ack` per reaction, ledger everything, synthesize once on "done", resurface unengaged points.
-- [close-loops-in-session](memories/close-loops-in-session.md) — don't let open loops drop when the conversation rabbitholes into one item; track and resurface the rest.
-- [ask-questions-in-plain-text](memories/ask-questions-in-plain-text.md) — ask clarifying questions as prose, not the AskUserQuestion widget.
-- [deliver-long-answers-as-html](memories/deliver-long-answers-as-html.md) — for long answers/question-batteries, offer a self-contained annotatable HTML file with copy-answers-back.
+- [make-walls-of-text-scannable](memories/make-walls-of-text-scannable.md) — BEFORE emitting any large output (briefing, comparison, PR body): structure for skimming, tastefully, on every comms surface.
+- [communication-precision](memories/communication-precision.md) — WHEN reporting findings/quantities: action-changing findings are the FIRST LINE of the final message; absolute units not percentages; coin shorthand or drop it.
+- [specific-findings-beat-reports](memories/specific-findings-beat-reports.md) — WHEN reporting exploratory/analysis results: name the file/timestamp/number; aggregates are dust.
+- [close-loops-in-session](memories/close-loops-in-session.md) — WHEN a conversation rabbitholes into one of several raised items: ledger and resurface the rest; engagement with F doesn't resolve A–E.
+- [ask-questions-in-plain-text](memories/ask-questions-in-plain-text.md) — WHEN about to ask clarifying questions: prose, never the AskUserQuestion widget; full spelled-out paragraphs per decision, never compressed number-soup.
+- [deliver-long-answers-as-html](memories/deliver-long-answers-as-html.md) — WHEN a reply would be a long briefing or question battery: offer an annotatable HTML file (see `skills/html-answer-doc/`).
+- [repeated-asks-are-the-signal](memories/repeated-asks-are-the-signal.md) — WHEN the user asks the same architectural question the Nth time: audit the trend, not the snapshot; act, don't re-defer.
+- [teaching-mode-per-project](memories/teaching-mode-per-project.md) — WHEN starting ops/infra/new-tech work: the project's teaching mode (explain-as-you-go vs operator-mode) flips per project; detect or ask.
 
 ## Verify, don't claim
-- [done-means-observed](memories/done-means-observed.md) — "done" = observed the change working on the path you touched; interleave local/CI, gate on green CI, confirm your test actually ran.
-- [execute-dont-hypothesize](memories/execute-dont-hypothesize.md) — actually run code / call APIs to get facts instead of presenting hypotheses; cut losses on dead ends; scoped to reversible actions.
-- [empowered-to-verify-locally](memories/empowered-to-verify-locally.md) — run it for real and observe; drive a browser (--chrome or Playwright) for frontends; see what the user sees.
-- [code-reading-is-a-hypothesis](memories/code-reading-is-a-hypothesis.md) — for consequential, easy-to-get-wrong behavior, code-reading is a hypothesis; validate against runtime + logs before asserting.
-- [reported-is-not-verified](memories/reported-is-not-verified.md) — a tool/agent/subagent claim (or a top-line summary) isn't confirmed truth; go to the primary source and re-check findings scaled to the cost of being wrong.
-- [drive-live-then-lock-the-fix](memories/drive-live-then-lock-the-fix.md) — for rich/interactive code, driving the real thing by hand is the primary signal of workingness; promote real finds into permanent CI, locking correct behavior not whatever rendered.
-- [tests-that-can-fail](memories/tests-that-can-fail.md) — write tests that fail when prod is wrong; no tautologies, real wiring, test like it's actually used; principles serve intent, not dogma.
+- [verify-own-work](memories/verify-own-work.md) — BEFORE claiming "done"/"fixed"/"green" or asserting a testable hypothesis: observe it — run the real thing, read the actual CI jobs on the head SHA, confirm your test ran; UI needs observed pixels.
+- [reported-is-not-verified](memories/reported-is-not-verified.md) — WHEN a tool/subagent/summary hands you findings or "all green": it's a claim; read the primary source, scaled to stakes.
+- [tests-that-can-fail](memories/tests-that-can-fail.md) — WHEN writing tests: they must be able to FAIL when prod is wrong — no tautologies, real wiring, test as actually used.
 
 ## Build the right amount
-- [scale-intervention-to-repo-maturity](memories/scale-intervention-to-repo-maturity.md) — use existing levers vs. improve scales to the repo's process maturity/fragility; ask if in doubt.
-- [let-patterns-emerge](memories/let-patterns-emerge.md) — don't design abstractions upfront; let them emerge from real call sites.
-- [drop-preemptive-code](memories/drop-preemptive-code.md) — code with no call sites yet is dead code; drop it, re-add when the work needs it.
-- [read-change-or-delete](memories/read-change-or-delete.md) — fix the thing itself (read→change) or delete it; NEVER write a new layer beside stale code/docs/issues/prose; writing new output is how an agent dodges reading its old output; layering pollutes context via staleness + unbounded length (the signal gets evicted); deletion is safe (git/backups).
-- [design-full-shape-slice-vertically](memories/design-full-shape-slice-vertically.md) — design the full architecture's shape/seams now and deliver thin vertical slices through it, not horizontal v0/v1 phases; "later" = implementation-later not shape-later.
-- [tests-pay-rent](memories/tests-pay-rent.md) — a test pays rent forever, so write it only when value beats rent; name the Five-Factor purpose it serves (Sarah Mei) or don't write it; coverage % is a gap lens, never a target.
+- [scale-intervention-to-repo-maturity](memories/scale-intervention-to-repo-maturity.md) — BEFORE introducing a new pattern/abstraction: existing levers in mature/fragile repos, improve freely in scrappy ones; ask when borderline.
+- [match-ceremony-to-stakes](memories/match-ceremony-to-stakes.md) — BEFORE building migration scaffolding (dual-write, phased zero-downtime, compat facades): ask "can we just cut over?"; no users ⇒ take the downtime.
+- [removing-code-is-a-virtue](memories/removing-code-is-a-virtue.md) — WHEN fixing a bug/reliability problem: deleting the failure mode beats hardening it; cut accidental complexity, keep essential.
+- [let-patterns-emerge](memories/let-patterns-emerge.md) — BEFORE designing an abstraction upfront: let it emerge from real call sites.
+- [drop-preemptive-code](memories/drop-preemptive-code.md) — WHEN adding code "for symmetry"/"we'll need it": no call sites yet = dead code; drop it.
+- [read-change-or-delete](memories/read-change-or-delete.md) — WHEN something you wrote is wrong/stale: fix THAT thing or delete it; NEVER write a new layer beside it.
+- [design-full-shape-slice-vertically](memories/design-full-shape-slice-vertically.md) — WHEN decomposing a build: design the full architectural shape now, deliver thin vertical slices through it; never horizontal v0/v1 phases.
+- [tests-pay-rent](memories/tests-pay-rent.md) — BEFORE writing a test: name the concrete factor it serves (Five-Factor); value must beat its forever-cost; coverage % is a lens, never a target.
 
 ## Correctness by construction
-- [default-strict-for-agent-code](memories/default-strict-for-agent-code.md) — configuring tooling: default to the newest toolchain at its strictest CORRECTNESS settings (never style); opting out is what needs justifying; a strict gate is the standing memory unread agent code never gets.
-- [make-impossible-states-impossible](memories/make-impossible-states-impossible.md) — designing a shape (types, DB schema, wire protocol, API): model so bad states can't be constructed/stored/sent; sum types, parse-don't-validate, newtypes, DB constraints; ladder schema/compiler > runtime > convention > memory.
-- [single-source-of-truth-via-codegen](memories/single-source-of-truth-via-codegen.md) — one shape duplicated across a boundary (two languages, client+server, code+DB): declare once, generate the rest, CI drift gate so they can't diverge; skip where upkeep exceeds drift prevented.
-- [strive-for-end-to-end-type-safety](memories/strive-for-end-to-end-type-safety.md) — wiring a full stack: keep an unbroken type chain datastore→server→API→client so a change errors everywhere it's now wrong; don't sever with any/cast; inference or codegen; the rename test finds holes.
-- [derive-dont-mirror](memories/derive-dont-mirror.md) — when one mutable fact lives in two runtime places they drift; default to one writer and derive every other view (sharpest in reactive UIs); the enemy is the unacknowledged hand-synced copy, not a managed cache/replica.
+- [default-strict-for-agent-code](memories/default-strict-for-agent-code.md) — WHEN configuring repo tooling: newest toolchain at strictest CORRECTNESS settings (never style); opting out is what needs justifying.
+- [make-impossible-states-impossible](memories/make-impossible-states-impossible.md) — WHEN designing a shape (types, DB schema, wire protocol, API): model so bad states can't be constructed/stored/sent; climb the enforcement ladder.
+- [single-source-of-truth-via-codegen](memories/single-source-of-truth-via-codegen.md) — WHEN one shape spans a boundary (two languages, client+server, code+DB): declare once, generate the rest, CI drift gate.
+- [strive-for-end-to-end-type-safety](memories/strive-for-end-to-end-type-safety.md) — WHEN wiring a full stack: unbroken type chain datastore→client so a rename errors everywhere; never sever with any/cast.
+- [derive-dont-mirror](memories/derive-dont-mirror.md) — WHEN a mutable fact would live in two runtime places: one writer, derive every other view; the enemy is the unacknowledged hand-synced copy.
 
 ## Drive to the outcome (incl. long unattended runs)
-- [ship-outcomes-not-tasks](memories/ship-outcomes-not-tasks.md) — work outcome-driven not task-list-driven; if Y needs X and both are approved, ship them together.
-- [reserve-the-humans-live-time](memories/reserve-the-humans-live-time.md) — plan/review live, run unattended; spend live time only on what needs the human; pack the away window with the heaviest/slowest jobs.
-- [dont-fake-blocked-in-unattended-runs](memories/dont-fake-blocked-in-unattended-runs.md) — when a bottleneck (one CI slot) binds, keep the parallel frontier going; prove it's exhausted before declaring blocked.
-- [drive-unattended-runs](memories/drive-unattended-runs.md) — you're always in one of three work-lanes (produce / consolidate-verify-delete / pivot-to-independent), never idle while a lane has work; over-producing is staying in produce when the job is consolidate; fake-blocked is idling when pivot exists; asking is a lane-switch not a halt; the only true wait is all-threads-blocked-on-human AND nothing-to-consolidate, then monitor actively.
-- [delegate-liberally-keep-the-core](memories/delegate-liberally-keep-the-core.md) — delegate to subagents liberally (context is the binding constraint on a long run; they're the main lever to extend it), but keep the nuanced core in-context and treat returns as claims to verify scaled to stakes; decompose along safe seams (read-only fans out, mutations need isolation); two failures — hoarding until context-death, and over-trusting context-blind returns.
-- [subagents-default-opus](memories/subagents-default-opus.md) — every subagent dispatch defaults to Opus; never the frontier cockpit model and never a smaller model silently; deviating either way is ask-first ("hairy — Fable?" / "trivial — Sonnet?"); unattended = Opus, full stop.
-- [presume-interruption](memories/presume-interruption.md) — assume a session can end mid-thought and resume much later; bank decisions/next-steps in durable artifacts (not chat) since the user's memory is unreliable; checkpoint tuned to interruption cost, not every turn.
+- [ship-outcomes-not-tasks](memories/ship-outcomes-not-tasks.md) — WHEN working a task list: chase the outcome; if Y needs X and both are approved, ship them together.
+- [reserve-the-humans-live-time](memories/reserve-the-humans-live-time.md) — WHEN planning around a human's live burst before an unattended stretch: drain decisions/credentials/judgment while they're live; pack the away-window heavy; USE-IT checkpoints on product surfaces.
+- [drive-unattended-runs](memories/drive-unattended-runs.md) — DURING an unattended run, WHEN you feel blocked or want to yield: three lanes (produce / consolidate-verify-delete / pivot); prove the frontier exhausted; wait actively.
+- [defaults-are-debts](memories/defaults-are-debts.md) — WHEN taking decisions by default to keep momentum: each default is a debt — re-present it concretely at landing with the tradeoff, still-flippable.
+- [delegate-liberally-keep-the-core](memories/delegate-liberally-keep-the-core.md) — WHEN dispatching subagents: delegate the decomposable liberally, keep the nuanced core in-context, verify returns as claims.
+- [subagents-default-opus](memories/subagents-default-opus.md) — BEFORE every subagent dispatch: model = Opus, no silent tier deviation in either direction; ask first, and unattended = Opus, full stop.
+- [presume-interruption](memories/presume-interruption.md) — THROUGHOUT any session: it can end mid-thought and resume months later; bank decisions/next-steps in durable artifacts, not chat.
 
 ## Writing durable docs
-- [capability-nouns-not-phase-labels](memories/capability-nouns-not-phase-labels.md) — name durable capabilities/concepts as SCREAMING-KEBAB capability nouns and short-lived side-quests as date-prefixed handles (JUN12-…); never sequential labels (Phase/Sprint/v0-v1), which fake organization and smuggle an unargued order; the two forms are distinguishable on sight and carry different rigor; ordering in prose is fine, encoding it in labels isn't; every handle resolves to a glossary entry.
-- [cold-read-durable-docs](memories/cold-read-durable-docs.md) — check durable docs with a fresh low-context subagent reading cold + linearly; scale intensity to size/durability (full loop on giant stale docs).
-- [rules-carry-their-why](memories/rules-carry-their-why.md) — write durable rules as why→default→consider, not bare imperatives agents over-literalize; the why lets a fresher-context model follow spirit-not-letter; FIRST sort each rule — mechanical→code/delete, judgment→why-prose+trust, rigid-prose-at-the-LLM is the bug.
-- [dont-amplify-scaffolding](memories/dont-amplify-scaffolding.md) — treat the user's thinking-aloud metaphors as scaffolding; don't crystallize throwaway phrasing into official terminology.
-- [docs-have-a-budget](memories/docs-have-a-budget.md) — the durable-doc corpus is loaded/read almost only by AGENTS, so every token taxes the loader → write LEAN not verbose; the corpus grows ∝ software+process, NOT ∝ time/hours; sweep+delete first, then add in the freed room; trade complexity, don't accumulate.
+- [capability-nouns-not-phase-labels](memories/capability-nouns-not-phase-labels.md) — WHEN naming work in durable docs: SCREAMING-KEBAB capability nouns or date-prefixed handles; never Phase/Sprint/v0-v1 labels.
+- [cold-read-durable-docs](memories/cold-read-durable-docs.md) — WHEN landing/revising a durable doc: it must read cold and linearly; run the cold-read-pass skill, scaled to the doc.
+- [rules-carry-their-why](memories/rules-carry-their-why.md) — WHEN writing durable rules for agents: why → default → consider, never bare imperatives; mechanical rules become code, not prose.
+- [dont-amplify-scaffolding](memories/dont-amplify-scaffolding.md) — WHEN the user thinks aloud in metaphors: capture substance, discard the naming; don't crystallize throwaway phrasing into terminology.
+- [docs-have-a-budget](memories/docs-have-a-budget.md) — WHEN touching durable docs: agents are the only readers; sweep-and-delete first, then add in the freed room; the corpus grows with the system, not with time.
 
 ## Git & collaboration hygiene
-- [append-only-during-review](memories/append-only-during-review.md) — on squash-merge branches, add commits instead of rebasing/amending; preserves the reviewer's re-review delta and chronological CI signal.
-- [attribute-ai-authorship-publicly](memories/attribute-ai-authorship-publicly.md) — mark AI-authored content published under the user's identity, per unit a reader consumes; one blanket disclaimer isn't enough.
+- [append-only-during-review](memories/append-only-during-review.md) — WHEN a PR is under review on a squash-merge branch: append commits, never rebase/amend/force-push.
+- [unlanded-is-not-gospel](memories/unlanded-is-not-gospel.md) — WHEN iterating on an open branch: unlanded code is fully disposable; don't treat pre-HEAD branch history as locked-in.
+- [stacked-pr-base-check](memories/stacked-pr-base-check.md) — BEFORE merging any PR: verify base = main; a stacked child can silently merge into a dead branch (green, MERGED, main never advances).
+- [github-issues-as-backlog](memories/github-issues-as-backlog.md) — ONLY in projects that declare GitHub issues as the backlog (assume NO): search-first, body-sync, bank asks pre-replan, bankruptcy sweeps.
+- [attribute-ai-authorship-publicly](memories/attribute-ai-authorship-publicly.md) — WHEN publishing AI-authored content under the user's identity (PRs, comments, messages — anywhere their handle renders): mark it AI-authored per unit.
+
+## Skills (procedures — in `skills/`, symlink into `~/.claude/skills/` per INSTALL.md)
+- `ack-mode` — the user reacts piecemeal to a long output: reply only `ack`, ledger, synthesize on "done".
+- `cold-read-pass` — cold-read a durable doc; cheap self-applied lens by default, subagent pass for big/stale docs.
+- `html-answer-doc` — deliver long answers/question batteries as an annotatable, copy-answers-back HTML file.
+
+## References (meta)
+- `references/5-era-context-engineering.md` — the distilled 2026 context-engineering reading; `references/5-era-overhaul-playbook.md` — the repeatable de-hobbling method; `EXTRACTION-PROMPT.md` — harvest a machine's local memories into this repo.

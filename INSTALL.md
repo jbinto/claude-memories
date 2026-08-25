@@ -45,6 +45,17 @@ printf '@/Users/jbinto/dev/claude-memories/MEMORY.md\n' > CLAUDE.md
 claude          # ask the verify question above; then: rm -rf /tmp/mem-trial
 ```
 
+## Skills
+
+Procedures live in `skills/` (ack-mode, cold-read-pass, html-answer-doc). Claude Code
+discovers skills in `~/.claude/skills/`, so symlink each one from your clone:
+
+```sh
+for d in ~/dev/claude-memories/skills/*/; do ln -sfn "$d" ~/.claude/skills/"$(basename "$d")"; done
+```
+
+Re-run after new skills land (a `git pull` updates the linked content automatically).
+
 ## Updating
 
 ```sh

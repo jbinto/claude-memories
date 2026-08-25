@@ -55,19 +55,18 @@ The handful that matter most to me — the non-negotiables. New here? Read these
 |---|---|
 | [make-walls-of-text-scannable](memories/make-walls-of-text-scannable.md) | Structure big outputs so they can be skimmed — signal over wall-of-prose, tastefully, not emoji-soup. |
 | [close-loops-in-session](memories/close-loops-in-session.md) | Raise six things, rabbithole on one, and don't let the other five silently die. |
-| [ack-mode](memories/ack-mode.md) | "Ack mode": you react piecemeal to a long output, the agent replies only `ack`, then synthesizes once on "done" — so the reading debt hits zero instead of compounding. |
+| [communication-precision](memories/communication-precision.md) | Action-changing findings lead the final message; absolute units not percentages; coin shorthand or drop it. |
+| [specific-findings-beat-reports](memories/specific-findings-beat-reports.md) | Name the file, the timestamp, the numbers — a pin-down-able instance is a finding, an aggregate is dust. |
+| [repeated-asks-are-the-signal](memories/repeated-asks-are-the-signal.md) | The Nth ask of the same question is data — audit the trend, not the snapshot, and act. |
+| [teaching-mode-per-project](memories/teaching-mode-per-project.md) | Some projects want the magic explained, others want an operator — the mode flips per project; detect or ask. |
 | [ask-questions-in-plain-text](memories/ask-questions-in-plain-text.md) | Ask in prose, not a multiple-choice widget that flattens the answer. |
 | [deliver-long-answers-as-html](memories/deliver-long-answers-as-html.md) | For long briefings or question-batteries, ship an annotatable HTML file instead of a terminal wall. |
 
 ## 🔬 Verify, don't claim
 | Memory | What it buys you |
 |---|---|
-| [done-means-observed](memories/done-means-observed.md) | "Done" means you watched it work on the path you touched — not lint, not "looks right," not "CI green" unread. |
-| [execute-dont-hypothesize](memories/execute-dont-hypothesize.md) | Run the code / call the API to get facts, instead of handing over a confident guess. |
-| [empowered-to-verify-locally](memories/empowered-to-verify-locally.md) | You're allowed to actually run the thing — boot it, drive the browser — and see for yourself. |
-| [code-reading-is-a-hypothesis](memories/code-reading-is-a-hypothesis.md) | Reading the code is a guess until runtime confirms it; validate before asserting. |
+| [verify-own-work](memories/verify-own-work.md) | "Done" means you observed it working — run the real thing, read the actual CI jobs, confirm your test ran; pixels for UI. |
 | [reported-is-not-verified](memories/reported-is-not-verified.md) | A tool's or agent's output is a *claim*, not truth — go read the primary source before you act on it. |
-| [drive-live-then-lock-the-fix](memories/drive-live-then-lock-the-fix.md) | For rich/interactive code, drive the real thing by hand as the real proof it works — then bank what you find into a CI test. |
 | [tests-that-can-fail](memories/tests-that-can-fail.md) | Write tests that fail when the code is wrong — no tautologies, real wiring. |
 
 ## 📏 Build the right amount
@@ -77,6 +76,8 @@ The handful that matter most to me — the non-negotiables. New here? Read these
 | [let-patterns-emerge](memories/let-patterns-emerge.md) | Don't design the abstraction up front; let it fall out of real call sites. |
 | [drop-preemptive-code](memories/drop-preemptive-code.md) | Code with no callers yet is dead code — add it when the work needs it, not before. |
 | [read-change-or-delete](memories/read-change-or-delete.md) | Fix the thing itself or delete it — never write a new layer beside stale code/docs/prose; layering is how you dodge reading your own old output, and it poisons context. |
+| [removing-code-is-a-virtue](memories/removing-code-is-a-virtue.md) | Deleting the machinery that produces a failure mode beats hardening it — cut accidental complexity. |
+| [match-ceremony-to-stakes](memories/match-ceremony-to-stakes.md) | Before building migration scaffolding, ask "can we just cut over?" — with no users, take the downtime. |
 | [design-full-shape-slice-vertically](memories/design-full-shape-slice-vertically.md) | Design the whole architecture's shape and seams up front, then ship a thin slice end-to-end — not easy-half-first v0/v1 phases. |
 | [tests-pay-rent](memories/tests-pay-rent.md) | A test charges rent forever — write it only when its value clearly beats that; name the purpose it serves or skip it. |
 
@@ -94,10 +95,10 @@ The handful that matter most to me — the non-negotiables. New here? Read these
 |---|---|
 | [ship-outcomes-not-tasks](memories/ship-outcomes-not-tasks.md) | Chase the deliverable, not the checklist; if Y needs X and both are approved, ship them together. |
 | [reserve-the-humans-live-time](memories/reserve-the-humans-live-time.md) | Spend the human's live time only on what needs them; pack the away-window with the heaviest jobs. |
-| [dont-fake-blocked-in-unattended-runs](memories/dont-fake-blocked-in-unattended-runs.md) | When one thing is blocked (CI), keep the rest of the frontier moving; prove you're stuck before stopping. |
 | [drive-unattended-runs](memories/drive-unattended-runs.md) | In an autonomous run the enemy is STOPPING — sustain one long push, wait actively, plan several tracks, pivot on blockers. |
 | [delegate-liberally-keep-the-core](memories/delegate-liberally-keep-the-core.md) | Subagents are the lever that extends a long run — delegate the decomposable, but keep the nuanced core in-context and verify what they hand back. |
 | [subagents-default-opus](memories/subagents-default-opus.md) | Delegates run Opus by default — never the cockpit's frontier model, never smaller silently; tier changes are ask-first. |
+| [defaults-are-debts](memories/defaults-are-debts.md) | Each defaulted decision is a debt — re-present it concretely when it lands, tradeoff shown, still flippable. |
 | [presume-interruption](memories/presume-interruption.md) | Assume the session can end mid-thought — bank decisions and next-steps in durable artifacts, not the chat. |
 
 ## 📝 Writing durable docs
@@ -113,7 +114,15 @@ The handful that matter most to me — the non-negotiables. New here? Read these
 | Memory | What it buys you |
 |---|---|
 | [append-only-during-review](memories/append-only-during-review.md) | On squash-merge branches, add commits instead of rebasing — preserve the reviewer's delta and CI chronology. |
+| [unlanded-is-not-gospel](memories/unlanded-is-not-gospel.md) | Code that hasn't landed on main is fully disposable — don't treat your open branch's history as locked-in. |
+| [stacked-pr-base-check](memories/stacked-pr-base-check.md) | Verify a PR's base is main before merging — stacked children silently merge into dead branches. |
+| [github-issues-as-backlog](memories/github-issues-as-backlog.md) | Only where issues ARE the backlog (assume no): search-first, body-sync, bank asks, bankruptcy sweeps. |
 | [attribute-ai-authorship-publicly](memories/attribute-ai-authorship-publicly.md) | Mark AI-authored content published under the user's name, at every unit a reader sees. |
+
+---
+
+## 🧰 Skills (procedures, not preferences)
+Repeatable procedures live in [`skills/`](skills/) and load on trigger once symlinked into `~/.claude/skills/` (see INSTALL.md): **ack-mode** (react piecemeal to a long output; the agent acks, ledgers, and synthesizes on "done"), **cold-read-pass** (check a durable doc reads cold), **html-answer-doc** (long answers/question batteries as an annotatable HTML file). Meta-guidance for this repo itself: [`references/`](references/) — the 5-era context-engineering distillation and overhaul playbook.
 
 ---
 
