@@ -98,7 +98,7 @@ The handful that matter most to me — the non-negotiables. New here? Read these
 | [drive-unattended-runs](memories/drive-unattended-runs.md) | In an autonomous run the enemy is STOPPING — sustain one long push, wait actively, plan several tracks, pivot on blockers. |
 | [delegate-liberally-keep-the-core](memories/delegate-liberally-keep-the-core.md) | Subagents are the lever that extends a long run — delegate the decomposable, but keep the nuanced core in-context and verify what they hand back. |
 | [subagents-default-opus](memories/subagents-default-opus.md) | Delegates run Opus by default — never the cockpit's frontier model, never smaller silently; tier changes are ask-first. |
-| [defaults-are-debts](memories/defaults-are-debts.md) | Each defaulted decision is a debt — re-present it concretely when it lands, tradeoff shown, still flippable. |
+| [re-present-defaulted-decisions](memories/re-present-defaulted-decisions.md) | Momentum-preserving "unless you object" decisions are debts — re-present each concretely when it lands, tradeoff shown, still flippable. |
 | [presume-interruption](memories/presume-interruption.md) | Assume the session can end mid-thought — bank decisions and next-steps in durable artifacts, not the chat. |
 
 ## 📝 Writing durable docs
