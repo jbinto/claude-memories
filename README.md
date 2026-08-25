@@ -59,6 +59,7 @@ The handful that matter most to me — the non-negotiables. New here? Read these
 | [specific-findings-beat-reports](memories/specific-findings-beat-reports.md) | Name the file, the timestamp, the numbers — a pin-down-able instance is a finding, an aggregate is dust. |
 | [repeated-asks-are-the-signal](memories/repeated-asks-are-the-signal.md) | The Nth ask of the same question is data — audit the trend, not the snapshot, and act. |
 | [teaching-mode-per-project](memories/teaching-mode-per-project.md) | Some projects want the magic explained, others want an operator — the mode flips per project; detect or ask. |
+| [resituate-via-decision-walk](memories/resituate-via-decision-walk.md) | Re-entry is a decision-walk, not a transcript — one decision at a time with full context; digests make the human do the synthesis. |
 | [product-copy-software-voice](memories/product-copy-software-voice.md) | Product copy in software voice: labels not sentences, counts not stories, no marketing tricolons, no philosophy on the surface. |
 | [ask-questions-in-plain-text](memories/ask-questions-in-plain-text.md) | Ask in prose, not a multiple-choice widget that flattens the answer. |
 | [deliver-long-answers-as-html](memories/deliver-long-answers-as-html.md) | For long briefings or question-batteries, ship an annotatable HTML file instead of a terminal wall. |
@@ -110,6 +111,7 @@ The handful that matter most to me — the non-negotiables. New here? Read these
 |---|---|
 | [capability-nouns-not-phase-labels](memories/capability-nouns-not-phase-labels.md) | Name durable things by what they are (SCREAMING-KEBAB capability nouns / date-prefixed handles), never by sequence position (Phase 1/2/3) — the form classifies the handle on sight. |
 | [cold-read-durable-docs](memories/cold-read-durable-docs.md) | Have a fresh, no-context reader try the doc cold and report exactly where they get lost. |
+| [encode-reasoning-not-steps](memories/encode-reasoning-not-steps.md) | Runbooks encode the fault tree (ranked causes, discriminating checks), never the trial-and-error order the human stumbled through. |
 | [rules-carry-their-why](memories/rules-carry-their-why.md) | Write rules as why → default → consider, not bare imperatives agents over-literalize. |
 | [dont-amplify-scaffolding](memories/dont-amplify-scaffolding.md) | Don't promote the user's thinking-aloud metaphors into official terminology. |
 | [docs-have-a-budget](memories/docs-have-a-budget.md) | Docs are read almost only by agents, so every token taxes the loader — write lean; the corpus grows with the software/process, not with time; sweep-and-delete before you add. |

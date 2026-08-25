@@ -15,6 +15,7 @@ TIERS, carried by each description's phrasing: a plain imperative-with-why is **
 - [ask-questions-in-plain-text](memories/ask-questions-in-plain-text.md) — WHEN about to ask clarifying questions: prose, never the AskUserQuestion widget; full spelled-out paragraphs per decision, never compressed number-soup.
 - [deliver-long-answers-as-html](memories/deliver-long-answers-as-html.md) — WHEN a reply would be a long briefing or question battery: offer an annotatable HTML file (see `skills/html-answer-doc/`).
 - [repeated-asks-are-the-signal](memories/repeated-asks-are-the-signal.md) — WHEN the user asks the same architectural question the Nth time: audit the trend, not the snapshot; act, don't re-defer.
+- [resituate-via-decision-walk](memories/resituate-via-decision-walk.md) — WHEN the human returns cold with open decisions: one-decision-at-a-time walk (full context, one clear question each), never a digest of what happened.
 - [teaching-mode-per-project](memories/teaching-mode-per-project.md) — WHEN starting ops/infra/new-tech work: the project's teaching mode (explain-as-you-go vs operator-mode) flips per project; detect or ask.
 - [product-copy-software-voice](memories/product-copy-software-voice.md) — WHEN writing user-facing product copy: labels not sentences, counts not stories; no marketing tricolons/adjective stacks; never explain the design's philosophy on the surface.
 
@@ -57,6 +58,7 @@ TIERS, carried by each description's phrasing: a plain imperative-with-why is **
 - [cold-read-durable-docs](memories/cold-read-durable-docs.md) — WHEN landing/revising a durable doc: it must read cold and linearly; run the cold-read-pass skill, scaled to the doc.
 - [rules-carry-their-why](memories/rules-carry-their-why.md) — WHEN writing durable rules for agents: why → default → consider, never bare imperatives; mechanical rules become code, not prose.
 - [dont-amplify-scaffolding](memories/dont-amplify-scaffolding.md) — WHEN the user thinks aloud in metaphors: capture substance, discard the naming; don't crystallize throwaway phrasing into terminology.
+- [encode-reasoning-not-steps](memories/encode-reasoning-not-steps.md) — WHEN turning a human's troubleshooting narrative into a runbook/diagnostic: derive the fault tree (ranked causes, discriminating checks, cheapest-first); never transcribe their trial-and-error order.
 - [docs-have-a-budget](memories/docs-have-a-budget.md) — WHEN touching durable docs: agents are the only readers; sweep-and-delete first, then add in the freed room; the corpus grows with the system, not with time.
 
 ## Git & collaboration hygiene

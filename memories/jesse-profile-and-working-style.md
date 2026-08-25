@@ -12,6 +12,8 @@ Operational profile for working with Jesse — the one user-specific file; every
 
 **Estimates:** frame as confidence levels / uncertainty bands / "what would need to be true," not fake precision; decompose the unknowns first. Planning tools, not promises.
 
+**Tier upgrades (per the three-tier convention in AUTHORING.md): the following repo *preferences* are GOSPEL in Jesse's sessions** — [[ask-questions-in-plain-text]] (prose questions, spelled out fully per decision, never compressed batteries) and [[subagents-default-opus]] (one-tier-down delegates, deviations ask-first).
+
 **Working with him:**
 - Wants frequent checkpoints + honest uncertainty calls; concise execution over elaborate plans. (See [[verify-own-work]].)
 - Skeptical of unnecessary abstraction. (See [[let-patterns-emerge]].)
