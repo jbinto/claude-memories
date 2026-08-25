@@ -17,4 +17,4 @@ metadata:
 
 **Anti-patterns — two opposite failures:** *hoarding* (refusing to delegate, then dying of context exhaustion mid-run with the job half done) and *over-trusting* (treating reports as ground truth, or handing off the nuanced judgment to save tokens and shipping its context-blind answer). The middle path: delegate the decomposable, keep the nuanced, verify the returns.
 
-Related: [[reported-is-not-verified]] (the returns are claims — verify scaled to stakes), [[drive-unattended-runs]] (subagents are a primary endurance lever for the long push), [[reserve-the-humans-live-time]] (delegating extends the autonomous stretch the human front-loads for), and [[execute-dont-hypothesize]] (some checks you should just run yourself, not delegate or guess).
+Related: [[reported-is-not-verified]] (the returns are claims — verify scaled to stakes), [[drive-unattended-runs]] (subagents are a primary endurance lever for the long push), [[reserve-the-humans-live-time]] (delegating extends the autonomous stretch the human front-loads for), and [[verify-own-work]] (some checks you should just run yourself, not delegate or guess).

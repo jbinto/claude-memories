@@ -1,20 +1,15 @@
 ---
 name: reserve-the-humans-live-time
-description: Geared to a work rhythm of intense interactive planning/review then long unattended runs. The human's live time is the scarce resource — spend it on decisions/interviews/setup/judgment and front-load that into the interactive burst; queue automatable work for the unattended stretch, and pack that window with the heaviest/slowest jobs (CI bakes, big fan-outs) so maximum impact lands by their return.
+description: WHEN planning around a human's interactive burst before an unattended stretch — their live time is the scarce resource; drain every decision, credential, and judgment call while they're live, pack the away-window with the heaviest jobs, and on product-iteration work force a USE-IT checkpoint at first-usable.
 metadata:
   type: feedback
 ---
 
-This is keyed to a specific working rhythm: **an intense interactive burst — planning, review, decisions, setup — followed by a long unattended run.** The aim is to finish everything that needs the human while they're live, so the autonomous stretch has all it needs to run for hours without them.
+Keyed to a rhythm of an intense interactive burst (planning, decisions, review, setup) followed by a long unattended run. **The human's live availability is the bottleneck, not compute.**
 
-The human's **interactive/live time is the scarce resource.** Spend it on what genuinely requires them — decisions, interviewing the human to capture intent, credential/environment setup, judgment calls — and push work that can run unattended (long investigations, CI bakes, deep-dives, mechanical sweeps) into the autonomous stretch.
+**Defaults:**
+- During the burst, sort work into needs-the-human-now vs can-run-unattended and *drain the former*: decisions, credentials, environment setup, judgment calls. Co-write the autonomous prompt while they're live; propose the unattended batch proactively.
+- Pack the away-window with the heaviest, slowest work — CI bakes, big fan-outs, long investigations — so maximum impact has landed by their return.
+- On product-iteration projects, unattended *speed* isn't the risk — unattended *direction* is. When a NEW product surface reaches first-usable, stop layering and get it in front of the human ("go try it — does X feel right?") before building v-next; a wrong build compounds silently for hours, and five minutes of real use catches it at the first layer. Loop-ins are for direction, not micro-bugs.
 
-**Why:** their availability is the bottleneck, not the compute. Burning live time on work that could've run unattended is waste — and worse, *failing* to extract a needed decision/credential/judgment during the live burst can stall the whole unattended run.
-
-**How to apply:**
-- During the interactive burst, sort work into **needs-the-human-now** vs **can-run-unattended**, and drain the former — surface every decision, credential, and judgment call you'll need before they step away.
-- **Co-write the autonomous prompt while they're live** so intent is captured accurately, then fire it when they leave.
-- **Pack the away window with the heaviest, slowest work.** Token-heavy, CPU/IO-heavy, and especially long-wall-clock jobs (remote CI bakes, full test suites, large parallel fan-outs) should run while the human is gone — that's exactly the time for things that take hours. Maximize what's in flight so the most impact has landed by the time they're back.
-- Proactively propose the unattended batch rather than waiting to be asked.
-
-Related: [[execute-dont-hypothesize]] (a mode of autonomous work that needs no human — run the check yourself rather than queueing it for them), [[dont-fake-blocked-in-unattended-runs]] (keep the unattended run productive once it's going), [[drive-unattended-runs]] (the endurance doctrine for the unattended stretch this front-loads for), and [[presume-interruption]] (the durability counterpart — this memory front-loads the decision-extraction; that one makes sure what was captured survives the gap when an interruption lands).
+Related: [[drive-unattended-runs]] (the in-run counterpart), [[presume-interruption]].

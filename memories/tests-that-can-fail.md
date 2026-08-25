@@ -25,4 +25,4 @@ metadata:
 - Prefer fewer, higher-fidelity tests over many tautological ones.
 - **"It compiles" is not a test result.** Compilation is a precondition, not a passing test.
 
-Related: [[done-means-observed]] (what counts as actually done), [[empowered-to-verify-locally]] (run it and watch).
+Related: [[verify-own-work]] (what counts as actually done — run it and watch).

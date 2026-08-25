@@ -16,4 +16,4 @@ metadata:
 - Catching yourself asking "what's next?" is a smell that you've dropped into task-list mode. Re-ask "is the outcome shipped?" — if no, keep going on the outcome.
 - Genuine forks (decisions on architecture, scope, philosophy that need the user) ARE real stopping points. Sub-decisions on naming, ordering, commit boundaries are not — make the call.
 
-Combines with [[done-means-observed]] (what counts as done): verify the *combined* outcome, not X alone or the diff.
+Combines with [[verify-own-work]] (what counts as done): verify the *combined* outcome, not X alone or the diff.

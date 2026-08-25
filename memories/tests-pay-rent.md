@@ -5,7 +5,7 @@ metadata:
   type: feedback
 ---
 
-**Before you write a test, name the concrete value it will earn. If you can't name one, don't write it.** A test has no inherent worth. It earns its keep only by serving a purpose — and it pays *rent forever*: every test gets read, run, and maintained on every change to the code around it, and carries the standing risk of false confidence. Write it only when that value clearly beats the rent.
+**Before you write a test, name the concrete value it will earn. If you can't name one, don't write it.** A test has no inherent worth. It earns its keep only by serving a purpose — and it pays *rent forever*: every test gets read, run, and maintained on every change to the code around it, and carries the standing risk of false confidence. Write it only when that value clearly beats the rent. (Disambiguating the idiom: the test is a *tenant who must keep paying you rent* — ongoing value exceeding its forever-cost. "This test pays rent" as praise means exactly "positive ROI"; it is not the negative "living rent-free in your head" sense.)
 
 **Coverage-as-a-goal optimizes the wrong thing.** The cost of a test is real and ongoing; the benefit has to exceed it. Most "we should test this" instincts are chasing a number, not a risk — and a test written to move a number is pure cost with no offsetting value.
 
@@ -28,4 +28,4 @@ metadata:
 
 **Anti-patterns it reacts against:** coverage targets treated as goals; the test pyramid (the heuristic of many unit tests, fewer integration, fewest e2e) applied as dogma without asking what the code needs; mock-heavy unit tests that mirror the implementation 1:1 and have to be edited every single time the code is.
 
-Related: [[tests-that-can-fail]] (once a test is worth writing, make it able to actually fail when prod is wrong — anti-tautology, real production wiring); [[done-means-observed]] ("done" means you observed the behavior, not that a coverage number moved); and [[drop-preemptive-code]] (the same don't-build-what-you-don't-yet-need judgment applied to production code — a test you can't justify is the testing analog of inert preemptive code).
+Related: [[tests-that-can-fail]] (once a test is worth writing, make it able to actually fail when prod is wrong — anti-tautology, real production wiring); [[verify-own-work]] ("done" means you observed the behavior, not that a coverage number moved); and [[drop-preemptive-code]] (the same don't-build-what-you-don't-yet-need judgment applied to production code — a test you can't justify is the testing analog of inert preemptive code).
