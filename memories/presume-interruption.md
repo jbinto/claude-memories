@@ -18,5 +18,6 @@ metadata:
 - At meaningful stopping points (not every turn), leave the tree coherent plus a short "where this is / what's next" a cold reader — including a future, context-free you — could resume from.
 - Prefer landing progress in reasonable increments over accumulating one big uncommitted work-in-progress a stop would strand — without churning a commit every turn either.
 - When a decision gets made in conversation, immediately reflect it into the durable artifact — don't rely on remembering it next session.
+- When pruning a working doc (run-state, plan, notes), unanswered asks and open ruling-requests must MOVE to a durable home — never just vanish with the pruned lines.
 
 Related: [[cold-read-durable-docs]] (those durable docs are what a resumed session reads cold — keep them honest and current), [[close-loops-in-session]] (surface and capture the open loops so a pause doesn't drop them), [[jesse-profile-and-working-style]] (the low-energy, interruption-prone cadence this is built around), and [[reserve-the-humans-live-time]] (the same burst-then-unattended rhythm from the other side — that memory allocates the human's scarce live time across the rhythm; this one keeps the work-state recoverable across the interruptions the rhythm guarantees).
