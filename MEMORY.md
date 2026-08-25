@@ -2,6 +2,8 @@
 
 Generic, shareable "how I Claude" memories — portable across work + side-project, no proprietary info. Jesse-specific personal context is confined to `memories/jesse-profile-and-working-style.md`; everything else stays generic. (Repo-specific memories stay in their own project memory dirs.) Each line is a FIRING CONDITION — when it matches the moment, read the full memory at `memories/<slug>.md`. Grouped by category; `README.md` has the human tour.
 
+TIERS, carried by each description's phrasing: a plain imperative-with-why is **gospel** (deviating is a bug); "prefer/offer/default-to" phrasing is a **preference** (deviate freely where context wants); a line opening with an ONLY-WHEN gate is **applicability-gated** (firing it outside its precondition is actively wrong — assume it does NOT apply until the gate is met). The personal profile can upgrade a preference to gospel for its person.
+
 ## Who I am
 - [jesse-profile-and-working-style](memories/jesse-profile-and-working-style.md) — READ EARLY in any session working with Jesse: competencies, execution preferences, calibration shifts.
 
@@ -14,6 +16,7 @@ Generic, shareable "how I Claude" memories — portable across work + side-proje
 - [deliver-long-answers-as-html](memories/deliver-long-answers-as-html.md) — WHEN a reply would be a long briefing or question battery: offer an annotatable HTML file (see `skills/html-answer-doc/`).
 - [repeated-asks-are-the-signal](memories/repeated-asks-are-the-signal.md) — WHEN the user asks the same architectural question the Nth time: audit the trend, not the snapshot; act, don't re-defer.
 - [teaching-mode-per-project](memories/teaching-mode-per-project.md) — WHEN starting ops/infra/new-tech work: the project's teaching mode (explain-as-you-go vs operator-mode) flips per project; detect or ask.
+- [product-copy-software-voice](memories/product-copy-software-voice.md) — WHEN writing user-facing product copy: labels not sentences, counts not stories; no marketing tricolons/adjective stacks; never explain the design's philosophy on the surface.
 
 ## Verify, don't claim
 - [verify-own-work](memories/verify-own-work.md) — BEFORE claiming "done"/"fixed"/"green" or asserting a testable hypothesis: observe it — run the real thing, read the actual CI jobs on the head SHA, confirm your test ran; UI needs observed pixels.
@@ -24,6 +27,8 @@ Generic, shareable "how I Claude" memories — portable across work + side-proje
 - [scale-intervention-to-repo-maturity](memories/scale-intervention-to-repo-maturity.md) — BEFORE introducing a new pattern/abstraction: existing levers in mature/fragile repos, improve freely in scrappy ones; ask when borderline.
 - [match-ceremony-to-stakes](memories/match-ceremony-to-stakes.md) — BEFORE building migration scaffolding (dual-write, phased zero-downtime, compat facades): ask "can we just cut over?"; no users ⇒ take the downtime.
 - [removing-code-is-a-virtue](memories/removing-code-is-a-virtue.md) — WHEN fixing a bug/reliability problem: deleting the failure mode beats hardening it; cut accidental complexity, keep essential.
+- [dont-build-machinery-for-one-offs](memories/dont-build-machinery-for-one-offs.md) — BEFORE building parse/derive/migrate machinery: recurring × unbounded input earns a machine; a one-off or fixed owned dataset gets ad-hoc'd directly (or the data just gets edited).
+- [build-idiomatic-hunt-antipatterns](memories/build-idiomatic-hunt-antipatterns.md) — WHEN touching any framework seam: build it the canonical way, clean naive-era antipatterns in the same pass, never smuggle a behavior change under a refactor.
 - [let-patterns-emerge](memories/let-patterns-emerge.md) — BEFORE designing an abstraction upfront: let it emerge from real call sites.
 - [drop-preemptive-code](memories/drop-preemptive-code.md) — WHEN adding code "for symmetry"/"we'll need it": no call sites yet = dead code; drop it.
 - [read-change-or-delete](memories/read-change-or-delete.md) — WHEN something you wrote is wrong/stale: fix THAT thing or delete it; NEVER write a new layer beside it.
@@ -36,6 +41,7 @@ Generic, shareable "how I Claude" memories — portable across work + side-proje
 - [single-source-of-truth-via-codegen](memories/single-source-of-truth-via-codegen.md) — WHEN one shape spans a boundary (two languages, client+server, code+DB): declare once, generate the rest, CI drift gate.
 - [strive-for-end-to-end-type-safety](memories/strive-for-end-to-end-type-safety.md) — WHEN wiring a full stack: unbroken type chain datastore→client so a rename errors everywhere; never sever with any/cast.
 - [derive-dont-mirror](memories/derive-dont-mirror.md) — WHEN a mutable fact would live in two runtime places: one writer, derive every other view; the enemy is the unacknowledged hand-synced copy.
+- [unknown-is-not-false](memories/unknown-is-not-false.md) — WHEN deriving a value or rendering status from another source: unavailable propagates as UNKNOWN, never coerces to false/zero/OK; surfaces show "we don't know" distinctly.
 
 ## Drive to the outcome (incl. long unattended runs)
 - [ship-outcomes-not-tasks](memories/ship-outcomes-not-tasks.md) — WHEN working a task list: chase the outcome; if Y needs X and both are approved, ship them together.
@@ -59,6 +65,7 @@ Generic, shareable "how I Claude" memories — portable across work + side-proje
 - [stacked-pr-base-check](memories/stacked-pr-base-check.md) — BEFORE merging any PR: verify base = main; a stacked child can silently merge into a dead branch (green, MERGED, main never advances).
 - [github-issues-as-backlog](memories/github-issues-as-backlog.md) — ONLY in projects that declare GitHub issues as the backlog (assume NO): search-first, body-sync, bank asks pre-replan, bankruptcy sweeps.
 - [attribute-ai-authorship-publicly](memories/attribute-ai-authorship-publicly.md) — WHEN publishing AI-authored content under the user's identity (PRs, comments, messages — anywhere their handle renders): mark it AI-authored per unit.
+- [batch-builds-when-ci-is-scarce](memories/batch-builds-when-ci-is-scarce.md) — ONLY where CI capacity is scarce (judge per repo): >2 smallish builds queue as one branch + one integration build; skip for deploy-attribution or review-held changes.
 
 ## Skills (procedures — in `skills/`, symlink into `~/.claude/skills/` per INSTALL.md)
 - `ack-mode` — the user reacts piecemeal to a long output: reply only `ack`, ledger, synthesize on "done".

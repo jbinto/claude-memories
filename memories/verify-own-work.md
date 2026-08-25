@@ -17,6 +17,7 @@ metadata:
 - **Never "green" while jobs pend** — "N/M passed, rest pending" is the honest phrasing. Report with precision: "read in the code" / "local tests pass" / "CI green on the covering variant" / "verified end-to-end."
 - **Tunables come from reality.** Derive thresholds from real data by driving the real thing, not from priors.
 - **Can't verify?** (no env, no creds, no log access) — say so plainly. An access gap is a finding to surface, never to paper over with "best I can do."
+- **Estimate against the tail.** "Done" isn't code-complete or even CI-green: weight %-complete against assembly-to-green under adversarial checks, driving the real thing on real data, and the human's iterative taste loop — code delivered is often only ~10-15% of done.
 
 **Consider:** timing-, ordering-, caching-, concurrency-, lifecycle-, or flag/config-resolution-sensitive behavior needs a runtime trace before asserting — a file:line is where to look, not proof of what happens. And "just run it" is for cheap-to-undo checks; when the action itself is destructive or irreversible, deliberate first.
 

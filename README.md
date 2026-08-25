@@ -59,6 +59,7 @@ The handful that matter most to me — the non-negotiables. New here? Read these
 | [specific-findings-beat-reports](memories/specific-findings-beat-reports.md) | Name the file, the timestamp, the numbers — a pin-down-able instance is a finding, an aggregate is dust. |
 | [repeated-asks-are-the-signal](memories/repeated-asks-are-the-signal.md) | The Nth ask of the same question is data — audit the trend, not the snapshot, and act. |
 | [teaching-mode-per-project](memories/teaching-mode-per-project.md) | Some projects want the magic explained, others want an operator — the mode flips per project; detect or ask. |
+| [product-copy-software-voice](memories/product-copy-software-voice.md) | Product copy in software voice: labels not sentences, counts not stories, no marketing tricolons, no philosophy on the surface. |
 | [ask-questions-in-plain-text](memories/ask-questions-in-plain-text.md) | Ask in prose, not a multiple-choice widget that flattens the answer. |
 | [deliver-long-answers-as-html](memories/deliver-long-answers-as-html.md) | For long briefings or question-batteries, ship an annotatable HTML file instead of a terminal wall. |
 
@@ -77,6 +78,8 @@ The handful that matter most to me — the non-negotiables. New here? Read these
 | [drop-preemptive-code](memories/drop-preemptive-code.md) | Code with no callers yet is dead code — add it when the work needs it, not before. |
 | [read-change-or-delete](memories/read-change-or-delete.md) | Fix the thing itself or delete it — never write a new layer beside stale code/docs/prose; layering is how you dodge reading your own old output, and it poisons context. |
 | [removing-code-is-a-virtue](memories/removing-code-is-a-virtue.md) | Deleting the machinery that produces a failure mode beats hardening it — cut accidental complexity. |
+| [dont-build-machinery-for-one-offs](memories/dont-build-machinery-for-one-offs.md) | A machine earns its cost at recurring × unbounded input; one-offs and owned data get done directly — or the data just gets edited. |
+| [build-idiomatic-hunt-antipatterns](memories/build-idiomatic-hunt-antipatterns.md) | Build seams the framework-canonical way and clean naive-era patterns as you touch them — never smuggling behavior changes. |
 | [match-ceremony-to-stakes](memories/match-ceremony-to-stakes.md) | Before building migration scaffolding, ask "can we just cut over?" — with no users, take the downtime. |
 | [design-full-shape-slice-vertically](memories/design-full-shape-slice-vertically.md) | Design the whole architecture's shape and seams up front, then ship a thin slice end-to-end — not easy-half-first v0/v1 phases. |
 | [tests-pay-rent](memories/tests-pay-rent.md) | A test charges rent forever — write it only when its value clearly beats that; name the purpose it serves or skip it. |
@@ -89,6 +92,7 @@ The handful that matter most to me — the non-negotiables. New here? Read these
 | [single-source-of-truth-via-codegen](memories/single-source-of-truth-via-codegen.md) | When one shape lives on both sides of a boundary, declare it once and generate the rest — drift-gated so they can't diverge. |
 | [strive-for-end-to-end-type-safety](memories/strive-for-end-to-end-type-safety.md) | Keep types unbroken datastore→API→client so renaming a field lights up every place that's now wrong, before runtime. |
 | [derive-dont-mirror](memories/derive-dont-mirror.md) | One writer per mutable fact; derive every other view — so two copies can't silently drift out of sync. |
+| [unknown-is-not-false](memories/unknown-is-not-false.md) | Unavailable must propagate as UNKNOWN — never coerced to false/OK; show "we don't know" distinctly from a confident reading. |
 
 ## 🎯 Drive to the outcome (incl. long unattended runs)
 | Memory | What it buys you |
@@ -117,6 +121,7 @@ The handful that matter most to me — the non-negotiables. New here? Read these
 | [unlanded-is-not-gospel](memories/unlanded-is-not-gospel.md) | Code that hasn't landed on main is fully disposable — don't treat your open branch's history as locked-in. |
 | [stacked-pr-base-check](memories/stacked-pr-base-check.md) | Verify a PR's base is main before merging — stacked children silently merge into dead branches. |
 | [github-issues-as-backlog](memories/github-issues-as-backlog.md) | Only where issues ARE the backlog (assume no): search-first, body-sync, bank asks, bankruptcy sweeps. |
+| [batch-builds-when-ci-is-scarce](memories/batch-builds-when-ci-is-scarce.md) | Only where CI is scarce: group like builds onto one branch, one integration build — 2N+ε runs collapse to 2+1. |
 | [attribute-ai-authorship-publicly](memories/attribute-ai-authorship-publicly.md) | Mark AI-authored content published under the user's name, at every unit a reader sees. |
 
 ---

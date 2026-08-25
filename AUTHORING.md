@@ -10,6 +10,8 @@ These memories are durable docs read **cold** — by an AI coding agent in a fre
 6. **Trigger-phrase the `description`.** The index line is a firing condition, not a summary — "WHEN doing X / BEFORE Y, read this," so it pattern-matches at the moment of action. A summary-phrased line never fires.
 7. **Write lean (5-era — the 2026 Fable/Opus/Sonnet-5 model generation).** Assume a 5-generation model: give the why and the default, cut enumerations a brief instruction covers, cap `Related:` links at one or two, no restated boundaries. Rationale + method: `references/5-era-context-engineering.md` and `references/5-era-overhaul-playbook.md`.
 
+8. **Tier every memory by misapplication cost, carried in the description's phrasing.** Three tiers: **gospel** — plain imperative-with-why; deviating is a bug (most correctness/verification memories). **Preference** — "prefer/offer/default-to" phrasing; deviation is cheap where context wants it (stylistic and workflow choices). **Applicability-gated** — the description OPENS with the gate ("ONLY when X — assume NO"); firing it outside its precondition is actively wrong, not just off-taste. The personal profile file may upgrade a preference to gospel for its person.
+
 **Practice:** self-apply the cold-read lens to every new memory as you write it. Reserve a fresh-subagent cold-read pass (see `memories/cold-read-durable-docs.md`) for batches or when something feels context-bound.
 
 **Personal vs. generic:** Jesse-specific context lives only in `memories/jesse-profile-and-working-style.md`. Every other memory stays generic and portable (work + side-project), with no proprietary info.
