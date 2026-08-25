@@ -55,6 +55,7 @@ The handful that matter most to me — the non-negotiables. New here? Read these
 |---|---|
 | [make-walls-of-text-scannable](memories/make-walls-of-text-scannable.md) | Structure big outputs so they can be skimmed — signal over wall-of-prose, tastefully, not emoji-soup. |
 | [close-loops-in-session](memories/close-loops-in-session.md) | Raise six things, rabbithole on one, and don't let the other five silently die. |
+| [ack-mode](memories/ack-mode.md) | "Ack mode": you react piecemeal to a long output, the agent replies only `ack`, then synthesizes once on "done" — so the reading debt hits zero instead of compounding. |
 | [ask-questions-in-plain-text](memories/ask-questions-in-plain-text.md) | Ask in prose, not a multiple-choice widget that flattens the answer. |
 | [deliver-long-answers-as-html](memories/deliver-long-answers-as-html.md) | For long briefings or question-batteries, ship an annotatable HTML file instead of a terminal wall. |
 

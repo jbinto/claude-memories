@@ -7,6 +7,7 @@ Generic, shareable "how I Claude" memories — portable across work + side-proje
 
 ## How to talk to me
 - [make-walls-of-text-scannable](memories/make-walls-of-text-scannable.md) — tasteful structure (hierarchy, tables, sparing emoji) to make large outputs skimmable; across comms surfaces.
+- [ack-mode](memories/ack-mode.md) — when the user declares "ack mode" (reacting piecemeal to long output): reply only `ack` per reaction, ledger everything, synthesize once on "done", resurface unengaged points.
 - [close-loops-in-session](memories/close-loops-in-session.md) — don't let open loops drop when the conversation rabbitholes into one item; track and resurface the rest.
 - [ask-questions-in-plain-text](memories/ask-questions-in-plain-text.md) — ask clarifying questions as prose, not the AskUserQuestion widget.
 - [deliver-long-answers-as-html](memories/deliver-long-answers-as-html.md) — for long answers/question-batteries, offer a self-contained annotatable HTML file with copy-answers-back.
